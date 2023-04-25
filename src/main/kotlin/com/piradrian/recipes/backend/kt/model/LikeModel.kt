@@ -10,6 +10,9 @@ class LikeModel {
     val id: Long? = null
 
     // TODO: Add the recipe id
+    @ManyToOne
+    @JoinColumn(name = "recipe_id")
+    val recipeModel: RecipeModel? = null
 
     @ManyToOne
     @JoinColumn(name = "user_id")
