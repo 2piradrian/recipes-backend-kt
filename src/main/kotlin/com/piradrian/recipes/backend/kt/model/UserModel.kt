@@ -22,4 +22,7 @@ class UserModel {
     @OneToMany(mappedBy = "userModel")
     val categories: List<CategoryModel>? = null
 
+    @OneToMany(mappedBy = "userModel")
+    val likes: List<LikeModel>? = null
+
 }
