@@ -8,27 +8,27 @@ class RecipeModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null
+    val id: Long? = null
 
-    var name: String? = null
+    val name: String? = null
 
-    var category: String? = null
+    val category: String? = null
 
-    var time: String? = null
+    val time: String? = null
 
-    var description: String? = null
+    val description: String? = null
 
-    var image: String? = null
+    val image: String? = null
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     val userModel: UserModel? = null
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "recipeModel")
-    var ingredients: List<RecipeIngredientModel>? = null
+    val ingredients: List<RecipeIngredientModel>? = null
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "recipeModel")
-    var steps: List<RecipeStepModel>? = null
+    val steps: List<RecipeStepModel>? = null
 
 
 }

@@ -9,7 +9,6 @@ class LikeModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
 
-    // TODO: Add the recipe id
     @ManyToOne
     @JoinColumn(name = "recipe_id")
     val recipeModel: RecipeModel? = null

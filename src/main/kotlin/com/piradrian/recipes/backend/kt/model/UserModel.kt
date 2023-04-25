@@ -8,16 +8,16 @@ class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: String? = null
+    val id: String? = null
 
     @Column(name = "full_name")
-    var fullName: String? = null
+    val fullName: String? = null
 
     @Column(name = "email")
-    var email: String? = null
+    val email: String? = null
 
     @Column(name = "image")
-    var image: Int? = null
+    val image: Int? = null
 
     @OneToMany(mappedBy = "userModel")
     val categories: List<CategoryModel>? = null

@@ -7,13 +7,13 @@ import javax.persistence.*
 class RecipeStepModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null
+    val id: Long? = null
 
-    var description: String? = null
+    val description: String? = null
 
-    var image: String? = null
+    val image: String? = null
 
     @ManyToOne
     @JoinColumn(name = "recipe_id")
-    var recipeModel: RecipeModel? = null
+    val recipeModel: RecipeModel? = null
 }
