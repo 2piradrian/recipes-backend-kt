@@ -20,6 +20,6 @@ class UserModel {
     var image: Int? = null
 
     @OneToMany(mappedBy = "userModel")
-    val categories: List<CategoriesModel>? = null
+    val categories: List<CategoryModel>? = null
 
 }

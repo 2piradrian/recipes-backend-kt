@@ -4,7 +4,7 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "likes")
-class LikesModel {
+class LikeModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
