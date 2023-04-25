@@ -1,17 +1,17 @@
-package com.piradrian.kotlin.crud.model
+package com.piradrian.recipes.backend.kt.model
 
 import javax.persistence.*
 
 @Entity
-@Table(name = "recipe_ingredients")
-class RecipeIngredientModel {
+@Table(name = "recipe_steps")
+class RecipeStepModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null
 
-    var ingredient: String? = null
+    var description: String? = null
 
-    var quantity: String? = null
+    var image: String? = null
 
     @ManyToOne
     @JoinColumn(name = "recipe_id")

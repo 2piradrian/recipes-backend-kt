@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.2piradrian</groupId>
-	<artifactId>kotlin-crud</artifactId>
+	<artifactId>recipes-backend-kt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kotlin-crud</name>
 	<description>kotlin crud</description>

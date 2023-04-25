@@ -1,4 +1,4 @@
-package com.piradrian.kotlin.crud.model
+package com.piradrian.recipes.backend.kt.model
 
 import javax.persistence.*
 

@@ -1,4 +1,4 @@
-package com.piradrian.kotlin.crud
+package com.piradrian.recipes.backend.kt
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
