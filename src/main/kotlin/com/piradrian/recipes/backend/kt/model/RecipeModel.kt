@@ -20,10 +20,15 @@ class RecipeModel {
 
     val image: String? = null
 
+    val authorname: String? = null
+
+    val authorphoto: String? = null
+
     @ManyToOne
     @JoinColumn(name = "user_id")
-    val userModel: UserModel? = null
+    val authoruid: UserModel? = null
 
+    // ManyToMany con tabla auxiliar
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "recipeModel")
     val ingredients: List<RecipeIngredientModel>? = null
 
